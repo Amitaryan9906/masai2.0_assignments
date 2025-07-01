@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Suite">
+  <test name="Launch Flipkart Test">
+  <classes>
+     <!-- <class name="selenium_practice_examples.LaunchTest"/> -->
+      <class name="day4.DoubleClick"/>
+    </classes>
+  </test>
+</suite>

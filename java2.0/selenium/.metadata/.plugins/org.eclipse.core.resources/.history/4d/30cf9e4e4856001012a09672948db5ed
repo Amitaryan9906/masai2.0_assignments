@@ -1,0 +1,62 @@
+package bookstoscape_automation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import utility.DriverUtil;
+
+public class BooksTest {
+WebDriver driver;
+DriverUtil du = new DriverUtil();
+
+@BeforeMethod
+public void setUp() {
+driver=du.setUp();
+du.launchUrl("https://books.toscrape.com/");
+}
+@Test
+public void testPageTitle1() {
+    String actualTitle = driver.getTitle();
+    String expectedTitle = "My Store";
+        Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch!");
+}
+@Test
+public void testPageTitle2() {
+    String actualTitle = driver.getTitle();
+    String expectedTitle = "All products | Books to Scrape - Sandbox";
+        Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch!");
+}
+
+@Test(enabled=false)
+public void testNonFictionCategory() {
+    // Click on "Non-Fiction" under "Books" > "Non-Fiction"
+    driver.findElement(By.linkText("Non-Fiction")).click();
+    String heading = driver.findElement(By.cssSelector("div.page-header.action h1")).getText();
+    Assert.assertEquals(heading, "Non-Fiction", "Non-Fiction category not loaded correctly.");
+}
+
+@Test(enabled=false)
+public void testAddBookToBasket() {
+    // Click on first book
+    driver.findElement(By.cssSelector("article.product_pod h3 a")).click();
+
+    // Click Add to basket
+    driver.findElement(By.cssSelector("form button.btn-add-to-basket")).click();
+
+    // Check if confirmation is displayed
+    WebElement confirmation = driver.findElement(By.cssSelector("div.alertinner"));
+    Assert.assertTrue(confirmation.getText().contains("has been added to your basket"),
+            "Book was not added to the basket successfully.");
+}
+
+@AfterMethod
+public void tearDown() {
+   du.tearDown();
+}
+
+}

@@ -1,0 +1,35 @@
+package day4;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import utility.DriverUtil;
+
+
+public class DoubleClick {
+	private WebDriver driver;
+	private DriverUtil util;
+	
+	@BeforeTest
+	public void setUp() {
+		util =new DriverUtil();
+		driver =util.setUp();
+	}
+	
+	@Test
+	 public void testDoubleClick() {
+		util.launchUrl("https://qa-practice.netlify.app/double-click");
+		 WebElement element = driver.findElement(By.xpath("//button[@id='double-click-btn']"));
+		 Actions actions = new Actions(driver);
+	        actions.doubleClick(element).perform();
+	  }
+	 @AfterTest
+	    public void tearDown() {
+	        util.tearDown();
+	    }
+}

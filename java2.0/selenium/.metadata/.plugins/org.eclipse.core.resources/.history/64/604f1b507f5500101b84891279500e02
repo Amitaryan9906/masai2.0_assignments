@@ -1,0 +1,33 @@
+package utils;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+export public class Utils {
+	WebDriver driver;
+	  // Setup method returns WebDriver instance
+    public WebDriver setUp() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        return driver;
+    }
+
+    // Load a URL (helper method)
+    public void launchUrl(String url) {
+        if (driver != null) {
+            driver.get(url);
+        } else {
+            throw new IllegalStateException("WebDriver not initialized. Call setUp() first.");
+        }
+    }
+
+    // Close the browser
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestClass {
+
+@BeforeClass
+private void setup() {
+WebDriverManager.chromedriver().setup();
+WebDriver driver ;
+driver = new ChromeDriver();
+driver.manage().window().maximize();
+}
+@Test
+private void launchWeb(WebDriver driver) {
+ driver.get("https://app.outgrow.website/");
+
+}
+
+@AfterTest
+
+private void quit(WebDriver driver) {
+driver.quit();
+}
+}

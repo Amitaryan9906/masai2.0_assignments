@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Assignments\masai2.0\java2.0\selenium\booksToScrap"/>
 			<item value="D:\Assignments\masai2.0\java2.0\selenium\redbus_automation"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -49,6 +50,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="swagLab"/>
+			<item value="booksToScrap"/>
 			<item value="OutGrow"/>
 			<item value="selenium"/>
 			<item value="redBus"/>
@@ -56,6 +59,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="swagLab1"/>
+			<item value="swagLab"/>
+			<item value="booksToScrap"/>
 			<item value="OutGrowAutomation"/>
 			<item value="selenium_practice"/>
 			<item value="redBus"/>

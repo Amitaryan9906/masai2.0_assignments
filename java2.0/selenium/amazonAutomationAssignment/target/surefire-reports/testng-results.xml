@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-13T21:54:55 IST" name="Surefire suite" finished-at="2025-07-13T21:55:10 IST" duration-ms="14994">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="AmazonSearchTest.searchLaptop()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" name="searchLaptop" class="amazonAutomation.AmazonSearchTest"/>
+      </group> <!-- SmokeTest -->
+    </groups>
+    <test started-at="2025-07-13T21:54:55 IST" name="Surefire test" finished-at="2025-07-13T21:55:10 IST" duration-ms="14994">
+      <class name="amazonAutomation.AmazonSearchTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" started-at="2025-07-13T21:54:55 IST" name="setupReport" finished-at="2025-07-13T21:54:55 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" started-at="2025-07-13T21:54:55 IST" name="setup" finished-at="2025-07-13T21:54:57 IST" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchLaptop()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" started-at="2025-07-13T21:54:57 IST" name="searchLaptop" finished-at="2025-07-13T21:55:09 IST" duration-ms="12226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLaptop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" started-at="2025-07-13T21:55:09 IST" name="tearDown" finished-at="2025-07-13T21:55:09 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:amazonAutomation.AmazonSearchTest@1d119efb]" started-at="2025-07-13T21:55:09 IST" name="flushReport" finished-at="2025-07-13T21:55:10 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- amazonAutomation.AmazonSearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-13T21:15:45 IST" name="Surefire suite" finished-at="2025-07-13T21:16:04 IST" duration-ms="19614">
+    <groups>
+      <group name="checkbox">
+        <method signature="GroupedTests.testCheckbox1()[pri:1, instance:testNG_JUNIT.GroupedTests@769f71a9]" name="testCheckbox1" class="testNG_JUNIT.GroupedTests"/>
+        <method signature="GroupedTests.testCheckbox2()[pri:2, instance:testNG_JUNIT.GroupedTests@769f71a9]" name="testCheckbox2" class="testNG_JUNIT.GroupedTests"/>
+      </group> <!-- checkbox -->
+      <group name="radio">
+        <method signature="GroupedTests.testRadio1()[pri:3, instance:testNG_JUNIT.GroupedTests@769f71a9]" name="testRadio1" class="testNG_JUNIT.GroupedTests"/>
+        <method signature="GroupedTests.testRadio2()[pri:4, instance:testNG_JUNIT.GroupedTests@769f71a9]" name="testRadio2" class="testNG_JUNIT.GroupedTests"/>
+      </group> <!-- radio -->
+    </groups>
+    <test started-at="2025-07-13T21:15:45 IST" name="Surefire test" finished-at="2025-07-13T21:16:04 IST" duration-ms="19614">
+      <class name="testNG_JUNIT.GroupedTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:15:45 IST" name="setup" finished-at="2025-07-13T21:16:03 IST" duration-ms="18219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckbox1()[pri:1, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:16:03 IST" name="testCheckbox1" finished-at="2025-07-13T21:16:03 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckbox1 -->
+        <test-method signature="testCheckbox2()[pri:2, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:16:03 IST" name="testCheckbox2" finished-at="2025-07-13T21:16:03 IST" depends-on-methods="testNG_JUNIT.GroupedTests.testCheckbox1" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckbox2 -->
+        <test-method signature="testRadio1()[pri:3, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:16:03 IST" name="testRadio1" finished-at="2025-07-13T21:16:03 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadio1 -->
+        <test-method signature="testRadio2()[pri:4, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:16:04 IST" name="testRadio2" finished-at="2025-07-13T21:16:04 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadio2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG_JUNIT.GroupedTests@769f71a9]" started-at="2025-07-13T21:16:04 IST" name="tearDown" finished-at="2025-07-13T21:16:04 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNG_JUNIT.GroupedTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

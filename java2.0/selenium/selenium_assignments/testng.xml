@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNG_JUNIT.CheckboxRadioTestNG"/>
-      <class name="testNG_JUNIT.CheckboxRadioJUnit"/>
+      <class name="testNG_JUNIT.GroupedTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
